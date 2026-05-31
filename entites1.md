@@ -1,0 +1,29 @@
+{
+  "name": "ChatHistory",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "messages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "role": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "title"
+  ]
+}
